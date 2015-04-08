@@ -106,7 +106,7 @@ time.interval <- av_activity[max.interval,1]
 ```
 which is the 104th five minutes interval of the day, corresponding to the  8:35-8:40 AM interval.
 
-**Imputing missing values**
+**Inputting missing values**
 
 We calculate the total number of missing values in the dataset
 
@@ -120,7 +120,7 @@ We calculate the total number of missing values in the dataset
 ## FALSE  TRUE 
 ## 15264  2304
 ```
-Assuming that the NA's corespond to periods of inactivity, we replace the missing values with zero's
+Assuming that the NA's correspond to periods of inactivity, we replace the missing values with zero's
 
 ```r
 activity[is.na(activity)] <- 0 
